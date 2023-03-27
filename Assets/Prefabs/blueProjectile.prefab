@@ -223,3 +223,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 5
   _speed: 5
+  _myTag: Player

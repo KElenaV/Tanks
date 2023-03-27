@@ -7,7 +7,7 @@ public abstract class ShootableTank : Tank
     
     [SerializeField] protected float ReloadTime = 0.5f;
 
-    protected void Shoot()
+    protected void ShootOneBullet()
     {
         Instantiate(_bullet, _shootPoint.position, transform.rotation);
     }

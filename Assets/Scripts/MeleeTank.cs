@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class MeleeTank : Tank
@@ -17,9 +16,30 @@ public class MeleeTank : Tank
 
     private void Update()
     {
-        Move();
+        Rigidbody2D.velocity = Vector2.zero;
+
+        if (_target)
+        {
+            if (_timer <= 0)
+            {
+                Move();
         
-        SetAngle(_target.position);
+                SetAngle(_target.position);
+            }
+            else
+            {
+                _timer -= Time.deltaTime;
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.TryGetComponent(out Player player) && _timer <= 0)
+        {
+            player.TakeDamage(_damage);
+            _timer = _hitCooldown;
+        }
     }
 
     protected override void Move()
