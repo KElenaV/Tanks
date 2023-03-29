@@ -26,13 +26,31 @@
         <e p="Palletes" t="Include" />
         <e p="Prefabs" t="Include" />
         <e p="Scenes" t="Include" />
-        <e p="Scripts" t="Include">
+        <e p="ScriptableObjects" t="Include">
           <e p="Bullet.cs" t="Include" />
-          <e p="MeleeTank.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
-          <e p="RangeTank.cs" t="Include" />
-          <e p="ShootableTank.cs" t="Include" />
-          <e p="Tank.cs" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="MainScene" t="Include">
+            <e p="Gun.cs" t="Include" />
+            <e p="ObjectPooler.cs" t="Include" />
+            <e p="Pool.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
+            <e p="Stats.cs" t="Include" />
+            <e p="Tank" t="Include">
+              <e p="MeleeTank.cs" t="Include" />
+              <e p="Player.cs" t="Include" />
+              <e p="RangeTank.cs" t="Include" />
+              <e p="ShootableTank.cs" t="Include" />
+              <e p="Tank.cs" t="Include" />
+            </e>
+            <e p="TankSpawner.cs" t="Include" />
+            <e p="UI.cs" t="Include" />
+          </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="Barrel.cs" t="Include" />
+            <e p="BarrelDisplay.cs" t="Include" />
+            <e p="Barrels" t="Include" />
+          </e>
         </e>
         <e p="Sprites" t="Include">
           <e p="PNG" t="Include">

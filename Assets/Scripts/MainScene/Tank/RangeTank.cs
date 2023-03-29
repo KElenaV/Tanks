@@ -11,7 +11,8 @@ public class RangeTank : ShootableTank
     protected override void Start()
     {
         base.Start();
-        _target = FindObjectOfType<Player>().transform;
+        //_target = FindObjectOfType<Player>().transform;
+        _target = Player.Instance.transform;
     }
 
     private void Update()
@@ -27,11 +28,6 @@ public class RangeTank : ShootableTank
         
             Shoot();
         }
-    }
-
-    protected override void Move()
-    {
-        transform.Translate(Vector2.down * (MovementSpeed * Time.deltaTime));
     }
 
     private void Shoot()

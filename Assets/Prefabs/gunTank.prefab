@@ -178,10 +178,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4871957054addf34b818e6cfcfb5cc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 15
-  MovementSpeed: 3
+  MovementSpeed: 2
   RotationSpeed: 5
-  _bullet: {fileID: -3766702812547217989, guid: b4baca0bbe1ef9946835186d46a688bd, type: 3}
+  _maxHealth: 15
+  _points: 30
+  _tankTag: Gun Tank
+  _bulletTag: Red Projectile
   _shootPoint: {fileID: 2737507701294894828}
   ReloadTime: 2
   _shootDistance: 5

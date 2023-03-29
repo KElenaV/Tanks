@@ -1,9 +1,21 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : ShootableTank
 {
+    public static Player Instance;
+    
+    [SerializeField] private List<Gun> _guns;
+    
     private float _elapsedTime;
     private Camera _camera;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     protected override void Start()
     {
@@ -27,6 +39,18 @@ public class Player : ShootableTank
         
         Vector2 direction = new Vector2(horizontal, vertical);
         Rigidbody2D.velocity = direction.normalized * MovementSpeed;
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        CurrentHealth -= damage;
+        UI.UpdateHp(CurrentHealth);
+
+        if (CurrentHealth <= 0)
+        {
+            Stats.ResetAllStats();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     private void Shoot()

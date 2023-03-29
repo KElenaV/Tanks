@@ -146,7 +146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99aea1ce9e9f51a469f1a4ec78f70042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 10
   MovementSpeed: 2
   RotationSpeed: 3
+  _maxHealth: 10
+  _points: 20
+  _tankTag: Melee Tank
   _damage: 5

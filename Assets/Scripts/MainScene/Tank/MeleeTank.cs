@@ -11,7 +11,8 @@ public class MeleeTank : Tank
     protected override void Start()
     {
         base.Start();
-        _target = FindObjectOfType<Player>().transform; //todo: Init method in Spawner
+        //_target = FindObjectOfType<Player>().transform; //todo: Init method in Spawner
+        _target = Player.Instance.transform;
     }
 
     private void Update()
@@ -40,11 +41,5 @@ public class MeleeTank : Tank
             player.TakeDamage(_damage);
             _timer = _hitCooldown;
         }
-    }
-
-    protected override void Move()
-    {
-        Rigidbody2D.velocity = Vector2.zero;
-        transform.Translate(Vector2.down * (MovementSpeed * Time.deltaTime));
     }
 }

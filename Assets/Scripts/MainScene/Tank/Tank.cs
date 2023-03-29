@@ -3,27 +3,38 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public abstract class Tank : MonoBehaviour
 {
-    [SerializeField] private int _maxHealth = 30;
-    
     [SerializeField] protected float MovementSpeed = 3f;
     [SerializeField] protected float RotationSpeed = 30f;
+    
+    [SerializeField] private int _maxHealth = 30;
+    [SerializeField] private int _points = 0;
+    [SerializeField] private string _tag;
 
     protected Rigidbody2D Rigidbody2D;
-    
-    private int _currentHealth;
+    protected int CurrentHealth;
+    protected UI UI;
+
     private float _angleOffset = 90;
+
+    public string TankTag => _tag;
 
     protected virtual void Start()
     {
-        _currentHealth = _maxHealth;
+        CurrentHealth = _maxHealth;
         Rigidbody2D = GetComponent<Rigidbody2D>();
+        UI = FindObjectOfType<UI>().GetComponent<UI>();
     }
 
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
-        _currentHealth -= damage;
-        if(_currentHealth <= 0)
-            Destroy(gameObject);
+        CurrentHealth -= damage;
+        
+        if (CurrentHealth <= 0)
+        {
+            Stats.Score += _points;
+            UI.UpdateScoreAndLevel();
+            gameObject.SetActive(false);
+        }
     }
 
     protected void SetAngle(Vector3 target)
@@ -34,5 +45,9 @@ public abstract class Tank : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, angle, Time.deltaTime * RotationSpeed);
     }
 
-    protected abstract void Move();
+    protected virtual void Move()
+    {
+        Rigidbody2D.velocity = Vector2.zero;
+        transform.Translate(Vector2.down * (MovementSpeed * Time.deltaTime));
+    }
 }

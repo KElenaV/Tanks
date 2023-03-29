@@ -178,10 +178,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4871957054addf34b818e6cfcfb5cc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 30
   MovementSpeed: 1
   RotationSpeed: 3
-  _bullet: {fileID: 193790435742193450, guid: a5c5191c0959fca4295e6476edb2d63d, type: 3}
+  _maxHealth: 30
+  _points: 150
+  _tag: 
+  _bulletTag: Red Big Projectile
   _shootPoint: {fileID: 7177691318995417169}
-  ReloadTime: 0.5
+  ReloadTime: 0.7
   _shootDistance: 7

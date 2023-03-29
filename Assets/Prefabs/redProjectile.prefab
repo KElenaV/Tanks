@@ -221,6 +221,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c035bf57eee6464b839a110648bd0f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 3
-  _speed: 3
-  _myTag: Enemy
+  _bullet: {fileID: 11400000, guid: a716603aea768e84f8991148ed0983df, type: 2}
