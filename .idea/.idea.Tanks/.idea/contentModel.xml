@@ -30,6 +30,15 @@
           <e p="Bullet.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="Delegates" t="Include">
+            <e p="ComparisonDelegateAndEvent.cs" t="Include" />
+            <e p="EventHandlerTest.cs" t="Include" />
+            <e p="Person.cs" t="Include" />
+            <e p="PersonSubscriber1.cs" t="Include" />
+            <e p="PersonSubscriber2.cs" t="Include" />
+            <e p="Test.cs" t="Include" />
+            <e p="UnityEventTest.cs" t="Include" />
+          </e>
           <e p="MainScene" t="Include">
             <e p="Gun.cs" t="Include" />
             <e p="ObjectPooler.cs" t="Include" />

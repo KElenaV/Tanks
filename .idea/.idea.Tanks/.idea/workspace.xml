@@ -8,9 +8,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Delegates/ComparisonDelegateAndEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Barrel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Delegates/PersonSubscriber2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/BarrelDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Delegates/EventHandlerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Delegates/UnityEventTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Delegates/PersonSubscriber1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAB4CD49-4110-4705-846E-3433671ECD50/1a/940a00a7/EventArgs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAB4CD49-4110-4705-846E-3433671ECD50/4a/6ab6251e/EventHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Delegates/Person.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -37,6 +45,13 @@
         <option value="$PROJECT_DIR$/Assets/ScriptableObjects/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainScene/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/BarrelDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Delegates/Person.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Delegates/PersonSubscriber1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Delegates/PersonSubscriber2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Delegates/ComparisonDelegateAndEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Delegates/Test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Delegates/EventHandlerTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Delegates/UnityEventTest.cs" />
       </list>
     </option>
   </component>
@@ -85,6 +100,7 @@
       <workItem from="1680006024726" duration="17087000" />
       <workItem from="1680092375010" duration="12708000" />
       <workItem from="1680107523105" duration="4527000" />
+      <workItem from="1680183544176" duration="7783000" />
     </task>
     <servers />
   </component>
